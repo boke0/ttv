@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ttv"
+version = "0.1.0"
+description = ""
+authors = ["木瓜丸 <boke0@boke0ya.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+moviepy = "^1.0.3"
+gTTS = "^2.3.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
