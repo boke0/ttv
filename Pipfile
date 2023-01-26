@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+nox = "*"
+flake8 = "*"
+
+[requires]
+python_version = "3.9"
+python_full_version = "3.9.12"
+
+[scripts]
+start = "python ttv/__main__.py"
+
+[packages]
+mistletoe = "*"
+requests = "*"
+wave = "*"
+moviepy = "*"
