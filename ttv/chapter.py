@@ -1,7 +1,7 @@
 from command import Heading, Image, Speech, Caption, Bgm, Reset
 
 
-class Scene:
+class Chapter:
     def __init__(self, serif=list()):
         self.commands = list()
         for command_dict in serif:

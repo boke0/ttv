@@ -1,4 +1,4 @@
-class Header:
+class Heading:
     """チャプターやシーンごとのタイトルを表します。
 
     levelが1の場合、チャプターの区切りを表し、チャプター先頭に蓋絵が挿入されます。
@@ -40,12 +40,12 @@ class Image:
 
     def __init__(self, path, params=dict()):
         self.path = path
-        self.resize = params["resize"] or "auto"
-        self.bg = params["bg"] or False
-        self.start = params["start"] or None
-        self.end = params["end"] or None
-        self.focus = params["focus"] or False
-        self.repeat = params["repeat"] or False
+        self.resize = params.get("resize") or "auto"
+        self.bg = params.get("bg") or False
+        self.start = params.get("start") or None
+        self.end = params.get("end") or None
+        self.focus = params.get("focus") or False
+        self.repeat = params.get("repeat") or False
 
 
 class Speech:

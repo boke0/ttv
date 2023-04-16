@@ -9,7 +9,7 @@ def main():
     filename = args.filename
     with open(filename) as f:
         doc = f.read()
-    pprint.pprint(parse_markdown(doc))
+    pprint.pprint(Editor(parse_markdown(doc)))
 
 
 def parse_args() -> argparse.Namespace:
