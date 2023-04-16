@@ -1,13 +1,15 @@
 import argparse
-import md
+import pprint
+from parse import parse_markdown
+from editor import Editor
 
 
 def main():
     args = parse_args()
     filename = args.filename
-    doc = md.load_from_file(filename)
-    with md.TTVRender() as r:
-        print(r.render(doc))
+    with open(filename) as f:
+        doc = f.read()
+    pprint.pprint(parse_markdown(doc))
 
 
 def parse_args() -> argparse.Namespace:
